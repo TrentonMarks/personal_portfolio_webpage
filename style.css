@@ -94,13 +94,61 @@ nav {
 }
 
 #work-container {
-    height: 90vh;
+    border: 1px solid pink;
+    height: 75%;
     width: 100%;
 }
 
 /* CONTACT SECTION */
 
+#contact-section {
+    background-color: rgb(48,56,65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 100vw; */
+    height: 80vh;
+    /* padding: 0 2rem; */
+    border: 1px solid white;
+}
 
+#contact-title {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+#contact-caption {
+    margin: 10px;
+    font-size: 16px;
+}
+
+#contact-social-container {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contact-links {
+    border:  1px solid white;
+    display: flex;
+    justify-content: space-around;
+    /* width: 100%; */
+    /* max-width: 980px; */
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-link {
+
+}
 
 /* FOOTER */
 
@@ -109,6 +157,4 @@ nav {
     height: 100px;
     width: 100%;
     border-top: 3px solid rgb(190,49,68);
-    /* position: absolute; */
-    /* bottom: 0; */
 }
