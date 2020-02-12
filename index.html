@@ -3,55 +3,111 @@
     <head>
         <meta charset="utf-8">
         <title>Personal Portfolio Webpage</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
         <!-- Nav Bar -->
-        <nav id="nav-bar">
+        <nav id="navbar">
             <ul id="nav-link-container">
                 <li>
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#welcome-section" class="nav-link">About</a>
                 </li>
                 <li>
-                    <a href="#work" class="nav-link">Work</a>
+                    <a href="#projects" class="nav-link">Work</a>
                 </li>
                 <li>
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#profile-section" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
 
         <!-- Main -->
         <main>
-            <!-- Hero Section -->
-            <section id="hero-section">
-                    <h1 id="hero-title">Hey I am Trenton</h1>
-                    <p id="hero-caption"><i>a web developer</i></p>
+            <!-- Welcome Section -->
+            <section id="welcome-section">
+                    <h1 id="welcome-title">Hey I am Trenton</h1>
+                    <p id="welcome-caption"><i>a web developer</i></p>
             </section>
 
-            <!-- work Section -->
-            <section id="work-section">
+            <!-- Projects Section -->
+            <section id="projects">
                 <div id="work-title-container">
                     <h2 id="work-title">These are some of my projects</h2>
                 </div>
                 <div id="work-container">
-
+                    <!-- Tribute Page -->
+                    <a href="#" class="project-tile">
+                        <div class="project-image-container">
+                            <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="Tribute Project">
+                        </div>
+                        <div class="project-footer">
+                            <p><code>< </code>Tribute Page<code> /></code></p>
+                        </div>
+                    </a>
+                    <!-- Random Quote Machine -->
+                    <a href="#" class="project-tile">
+                        <div class="project-image-container">
+                            <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="Random Quote Machine">
+                        </div>
+                        <div class="project-footer">
+                            <p><code>< </code>Random Quote Machine<code> /></code></p>
+                        </div>
+                    </a>
+                    <!-- JavaScript Calculator -->
+                    <a href="#" class="project-tile">
+                        <div class="project-image-container">
+                            <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="JavaScript Calculator">
+                        </div>
+                        <div class="project-footer">
+                            <p><code>< </code>JavaScript Calculator<code> /></code></p>
+                        </div>
+                    </a>
+                    <!-- Map Data Across Globe -->
+                    <a href="#" class="project-tile">
+                        <div class="project-image-container">
+                            <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="Map Data Across the Globe">
+                        </div>
+                        <div class="project-footer">
+                            <p><code>< </code>Map Data Across Globe<code> /></code></p>
+                        </div>
+                    </a>
+                    <!-- Wikipedia Viewer -->
+                    <a href="#" class="project-tile">
+                        <div class="project-image-container">
+                            <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="Wikipedia Viewer">
+                        </div>
+                        <div class="project-footer">
+                            <p><code>< </code>Wikipedia Viewer<code> /></code></p>
+                        </div>
+                    </a>
+                    <!-- Tic Tac Toe Game -->
+                    <a href="#" class="project-tile">
+                        <div class="project-image-container">
+                            <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" alt="Tic Tac Toe Game">
+                        </div>
+                        <div class="project-footer">
+                            <p><code>< </code>Tic Tac Toe Game<code> /></code></p>
+                        </div>
+                    </a>
                 </div>
+                <button id="show-all-btn" type="button" name="button">Show All</button>
             </section>
 
-            <!-- Contact Section -->
-            <section id="contact-section">
-                <div id="contact-header">
-                    <h2 id=contact-title>Let's work together...</h2>
-                    <p id="contact-caption"><i>How do you take your coffee?</i></p>
+            <!-- Profile Section -->
+            <section id="profile-section">
+                <div id="profile-header">
+                    <h2 id=profile-title>Let's work together...</h2>
+                    <p id="profile-caption"><i>How do you take your coffee?</i></p>
                 </div>
-                <div id="contact-links">
-                    <a href="#" class="contact-link">Facebook</a>
-                    <a href="#" class="contact-link">GitHub</a>
-                    <a href="#" class="contact-link">Twitter</a>
-                    <a href="#" class="contact-link">Send email</a>
-                    <a href="#" class="contact-link">Call me</a>
+                <div id="profile-link-container">
+                    <a href="https://www.facebook.com/" target="_blank" id="profile-link"><img class="social-icon" src="public/facebook-icon.png" alt="Facebook icon">Facebook</a>
+                    <a href="https://www.github.com/" target="_blank" id="profile-link"><img class="social-icon" src="public/github-icon.png" alt="GitHub icon">GitHub</a>
+                    <a href="https://www.twitter.com/" target="_blank" id="profile-link"><img class="social-icon" src="public/twitter-icon.png" alt="Twitter icon">Twitter</a>
+                    <a href="#" id="profile-link"><img class="social-icon" src="public/email-icon.png" alt="Email icon">Send email</a>
+                    <a href="#" id="profile-link"><img class="social-icon" src="public/phone-icon.png" alt="Phone icon">Call me</a>
                 </div>
             </section>
 
@@ -59,7 +115,9 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+            <div id="footer-caption">
+                <p>**This is just a fake portfolio. All the projects and profile details given are not real.</p>
+            </div>
             <p>Created for freeCodeCamp</p>
         </footer>
 

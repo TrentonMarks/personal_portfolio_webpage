@@ -1,13 +1,22 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     color: white;
     margin: 0;
     overscroll-behavior: none;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
 }
 
 /* NAV BAR */
 
-nav {
+#navbar {
     height: 65px;
     width: 100%;
     background-color: rgb(190,49,68);
@@ -30,36 +39,37 @@ nav {
 .nav-link {
     color: white;
     text-decoration: none;
-    margin-right: 50px;
     font-size: 20px;
+    padding: 19px 30px 18px 30px;
 }
 
 .nav-link:hover {
-    color: rgb(175, 175, 175);
+    color: rgb(210, 210, 210);
+    background-color: rgb(180,39,58);
 }
 
 .nav-link:active {
     color: rgb(150, 150, 150);
 }
 
-/* HERO SECTION */
+/* welcome SECTION */
 
-#hero-section {
+#welcome-section {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(90deg, rgb(65,65,65), rgb(25,25,25));
+    background-image: linear-gradient(90deg, rgb(60,60,60), rgb(30,30,30));
 }
 
-#hero-title {
+#welcome-title {
     font-size: 60px;
     margin-bottom: 0;
 }
 
-#hero-caption {
+#welcome-caption {
     color: rgb(190,49,68);
     margin: 0;
     padding: none;
@@ -68,11 +78,11 @@ nav {
     margin-top: 0;
 }
 
-/* WORK SECTION */
+/* PROJECTS SECTION */
 
-#work-section {
+#projects {
     background-color: rgb(69,86,125);
-    height: 100vh;
+    height: auto;
     width: 100%;
     text-align: center;
 }
@@ -94,60 +104,128 @@ nav {
 }
 
 #work-container {
-    border: 1px solid pink;
-    height: 75%;
+    height: auto;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-/* CONTACT SECTION */
+.project-tile {
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
 
-#contact-section {
+.project-image-container {
+    height: 350px;
+    width: 400px;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-footer {
+    background-color: rgb(48,56,65);
+    height: 75px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover code {
+    color: orange;
+    transition: color 0.3s ease-in;
+}
+
+code {
+    color: rgb(48,56,65);
+    font-size: 24px;
+}
+
+
+
+#show-all-btn {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(48,56,65);
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    transition: background-color 0.3s ease-in;
+}
+
+#show-all-btn:hover {
+    background-color: rgb(190,49,68);
+}
+
+/* profile SECTION */
+
+#profile-section {
     background-color: rgb(48,56,65);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* width: 100vw; */
     height: 80vh;
-    /* padding: 0 2rem; */
-    border: 1px solid white;
 }
 
-#contact-title {
+#profile-title {
     font-size: 3.5rem;
     margin: 0;
 }
 
-#contact-caption {
+#profile-caption {
     margin: 10px;
     font-size: 16px;
 }
 
-#contact-social-container {
-    border: 1px solid white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#contact-links {
-    border:  1px solid white;
+#profile-link-container {
     display: flex;
     justify-content: space-around;
-    /* width: 100%; */
-    /* max-width: 980px; */
-    margin-top: 4rem;
+    margin-top: 10px;
     flex-wrap: wrap;
+    width: 750px;
 }
 
-.contact-link {
+@media (max-width: 900px) {
+    #profile-link-container {
+        width: 500px;
+    }
+}
+
+#profile-link {
     text-decoration: none;
     color: white;
+    font-size: 1.5em;
+    margin: 20px 20px 0 0;
+    transition: transform 0.3s ease-out;
 }
 
-.contact-link {
+#profile-link:hover {
+    transform: translateY(8px);
+}
 
+.social-icon {
+    height: 22.5px;
+    width: 22.5px;
+    margin-right: 5px;
 }
 
 /* FOOTER */
@@ -157,4 +235,12 @@ nav {
     height: 100px;
     width: 100%;
     border-top: 3px solid rgb(190,49,68);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-caption {
+    width: 50%;
 }
